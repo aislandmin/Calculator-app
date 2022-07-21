@@ -1,0 +1,191 @@
+/* Base */
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Roboto:wght@300&display=swap");
+
+/* General */
+* {
+  box-sizing: border-box;
+  position: relative;
+  cursor: default;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+html {
+  width: 100vw;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; }
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan";
+  font-size: 1.6rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+/* Components */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.keypad {
+  width: 32.7rem;
+  height: 42rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  padding: 2.4rem;
+  margin-top: 2.4rem;
+  grid-column-gap: 1.2rem;
+  grid-row-gap: 1.8rem;
+  border-radius: 0.8rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .keypad {
+    width: 54rem;
+    height: 48rem; 
+  } 
+}
+
+.screen {
+  width: 32.7rem;
+  height: 9rem;
+  border: none;
+  border-radius: 0.8rem;
+  text-align: end;
+  font-size: 2.8rem;
+  letter-spacing: 0.08em;
+  font-weight: bold;
+  font-family: "League Spartan";
+  padding-right: 2.8rem; 
+}
+
+@media only screen and (min-width: 600px) {
+  .screen {
+    width: 54rem;
+    height: 12.8rem;
+    font-size: 4.4rem;
+    letter-spacing: 0.02em; } 
+}
+
+.top {
+  width: 32.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3.2rem; }
+  .top h1 {
+    align-self: center; }
+
+.topRightContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end; }
+  .topRightContainer .label {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.17em;
+    margin: 0 2.5rem 0.8rem 0;
+    font-weight: 700; }
+
+.toggleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 7.1rem; }
+  .toggleContainer div {
+    width: 5.2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 1rem;
+    margin-bottom: 0.7rem; }
+  .toggleContainer button {
+    width: 7.1rem;
+    height: 2.6rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    border: none; }
+  .toggleContainer .toggle {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin: 0.1rem 0 0 0.4rem;
+    border-radius: 50%;
+    transition: transform 0.4s; }
+
+@media only screen and (min-width: 600px) {
+  .top {
+    width: 54rem; } }
+button {
+  width: 6rem;
+  height: 6rem;
+  border: none;
+  font-weight: bold;
+  font-family: "League Spartan";
+  cursor: pointer;
+  border-radius: 0.6rem;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+.number {
+  padding-top: 0.8rem;
+  font-size: 2.8rem; }
+
+.delete, .equals, .reset {
+  font-size: 1.6rem;
+  letter-spacing: 0.02em; }
+
+.equals {
+  grid-column: 3/5;
+  justify-self: stretch;
+  width: 13.3rem;
+  height: 6rem; }
+
+.reset {
+  width: 13.3rem;
+  height: 6rem;
+  grid-column: 1/3;
+  justify-self: stretch; }
+
+@media only screen and (min-width: 600px) {
+  button {
+    width: 10.1rem;
+    height: 6rem; }
+
+  .number {
+    font-size: 3.2rem; }
+
+  .delete, .equals, .reset {
+    font-size: 2.2rem; }
+
+  .equals, .reset {
+    width: 22.7rem;
+    height: 6rem; } }
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0; 
+}
+
