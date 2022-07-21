@@ -23,13 +23,13 @@ This is a solution to Calculator app. Users should be able to:
 
 ### Screenshots
 
-![](./screenshot1.png)
+![](./screenshots/screenshot1.png)
 
-![](./screenshot2.png)
+![](./screenshots/screenshot2.png)
 
-![](./screenshot3.png)
+![](./screenshots/screenshot3.png)
 
-![](./screenshot4.png)
+![](./screenshots/screenshot4.png)
 
 ## My process
 
