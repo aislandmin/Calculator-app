@@ -19,11 +19,17 @@ This is a solution to Calculator app. Users should be able to:
 
 ### Link
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Calculator app](https://calculator-app-aislandmin.vercel.app/)
 
 ### Screenshots
 
-![](./screenshot.jpg)
+![](./screenshot1.png)
+
+![](./screenshot2.png)
+
+![](./screenshot3.png)
+
+![](./screenshot4.png)
 
 ## My process
 
